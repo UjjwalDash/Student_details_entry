@@ -14,19 +14,19 @@
     </header>
     <main>
         <p style="color:red">All required fields are marked with*</p>
-        <form method=get>
+        <form method=get action="save">
             <p> 
-                Resistration Id:*<input id="resistration_id" type="text"><br>
+                Resistration Id:*<input id="resistration_id" type="text" required><br>
             </p>
             <p>
-                First Name &ThickSpace;&ThickSpace;&ThickSpace;:* <input id="first_name" type="text"> &ThickSpace;Last Name &ThickSpace;&ThickSpace;&ThickSpace;:* <input id="last_name" type="text"><br>
+                First Name &ThickSpace;&ThickSpace;&ThickSpace;:* <input id="first_name" type="text" required> &ThickSpace;Last Name &ThickSpace;&ThickSpace;&ThickSpace;:* <input id="last_name" type="text" required><br>
             </p>
             <p>
-                Mail Id &ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;:* <input id="email" type="email"><br>
+                Mail Id &ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;:* <input id="email" type="email" required><br>
             </p>
             <p>
                 Department&ThickSpace;&ThickSpace;&ThickSpace;:*
-                <select id="department">
+                <select id="department" required>
                     <option value="" required>---------Select Option--------</option>
                     <option value="ce" required>Civil Engineering</option>
                     <option value="che" required>Chemical Engineering</option>
@@ -40,7 +40,7 @@
                 </select><br>
             </p>
             <p>
-                Phone Number:*<input id="phone_no" type="text"><br>
+                Phone Number:*<input id="phone_no" type="text" required><br>
             </p>
             <div id="btn">
                 <input id="submit" value="Submit" type="submit">
